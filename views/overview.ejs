@@ -1,0 +1,33 @@
+<%- include('Partials/header')%>
+    <div class="overview-parent">
+        <div id="overview">
+            <div class="big-imagediv">
+                <img src="/uploads/<%= card.Image%>" alt="">
+            </div>
+            <div class="details">
+                <h3 style="font-weight: 400;">
+                    <%= card.productname%>
+                </h3>
+                <div style=" font-family: gilroy;" class="pricing">
+                    <div style="color:rgb(12, 12, 12);margin-bottom: 0;font-size: 28px;">₹<%= card.offerprice%>
+                    </div>
+                    <div style="color:grey;margin-bottom: 0;font-size: 16px;"><Strike>₹<%= card.mainprice%></Strike>
+                    </div>
+                    <p style="color:green">₹<%= card.percent%>
+                    </p>
+
+                </div>
+
+                
+                <div class="list-item">
+                    <li class="my-3"><%= card.highlight%></li>
+                </div>
+                <div class="button">
+                    <button class="btn btn-success me-3">Buy Now</button>
+                    <a href="/cart" class="mx-3 btn btn-warning">Add to cart</a>
+                </div>
+
+              
+        </div>
+    </div>
+    <%- include('Partials/footer')%>

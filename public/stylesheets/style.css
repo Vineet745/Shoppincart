@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+nav{
+  width: 100vw;
+  height: 10vh;
+  background-color: lightskyblue;
+  display: flex;
+  align-items: center;
+  justify-content:space-between ;
+  padding: 0 10vh;
+}
+nav h1{
+  font-size: 3.5vh;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+nav ul li{
+  margin: 3vh;
+  cursor: pointer;
+}
+nav ul li img{
+  width: 30px;
+  height: 30px;
+}
+ sup{
+  font-size: 5vh;
+  background-color: rgb(228, 57, 228);
+border-radius: 30%;
+padding: 0.5vh 1vh;
+}
+.loginbtn{
+  background-color: rgb(189, 43, 43);
+}
+.home-page{
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+}
+.mobile-section{
+  width: 100vw;
+  height:50vh;
+  /* border: 1px solid black; */
+}
+.card-wrapper{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  overflow-y: hidden;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.mycard{
+  width: 20vw;
+  height: 50vh;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+.image-sec{
+  width: 100%;
+  height: 75%;
+  background-color: white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-sec img{
+  width: 70%;
+  height: 90%;
+  object-fit: contain;
+}
+.data{
+  padding: 2vh;
+}
+.pgroup{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: gilroy;
+}
+.Addproduct{
+  background-image: url("/images/blob-haikei.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overview-parent{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(68, 163, 76);
+}
+#overview{
+  width: 70%;
+  height: 80%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 2vh;
+  background-color: rgb(253, 253, 253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big-imagediv{
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big-imagediv img{
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+.details{
+  width: 50%;
+  height: 100%;
+  padding: 4vh 5vw;
+}
+.pricing{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 2vh;
+}
+.pricing p{
+  margin-bottom: 0;
+}
+.main-cart{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgreen;
+}
+.cart{
+  height: 80vh;
+}
+
+
+/* form */
+
+#main-form{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/blurry-gradient-haikei.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form{
+  width: 25vw;
+  height: 60vh;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+}
+.register-form{
+  width: 55vw;
+  height: 80vh;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+}

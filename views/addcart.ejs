@@ -1,0 +1,27 @@
+<%-include('Partials/Header') %>
+<div class="main-cart">
+    <div class="cart">
+        <h3 class="mb-3">Your Added Items</h3>
+<% carditem.forEach((card)=>{ %>
+    <div class="card mb-3" style="max-width: 840px;">
+            <div class="row g-0">
+              <div  class="col-md-3 d-flex align-items-center justify-content-center">
+                <img style="width:20%" src="/uploads/<%= card.Image%>" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><%= card.productname%></h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                </div>
+              </div>
+              <div class="col-md-1 d-flex justify-content-center align-items-center">
+                <a href="/delete/<%= card._id%>"><img src="/images/delete.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <% })%>
+    </div>
+</div>
+
+<%-include('Partials/footer') %>

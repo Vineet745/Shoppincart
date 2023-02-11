@@ -1,0 +1,30 @@
+<%- include('Partials/header')%>
+<div id="main">
+<%- include('Partials/nav')%>
+<div class="home-page">
+    <h3 class="mb-3 pt-2 ms-3">Electronics  <a href="/Addproduct" class="btn btn-primary">Add Product</a></h3>
+    <div class="mobile-section">
+        <div class="card-wrapper">
+<% allcard.forEach((card)=>{ %>
+        <div class="mycard mx-3 ">
+<div class="image-sec">
+    <img src="/uploads/<%= card.Image%>" alt="Phone Image">
+</div>
+<div class="data">
+    <h4><a style="text-decoration: none;" href="/overview/<%= card._id%>"><%= card.productname%></a></h4>
+    <div class="pgroup">
+    <p>₹<%= card.offerprice%></p>
+    <p class="offer"><Strike>₹<%= card.mainprice%></Strike> <span style="color:green"><%= card.percent%></span></p>
+</div>
+</div>
+        </div>
+<% })%>
+
+    </div>
+    </div>
+</div>
+
+
+
+</div>
+<%- include('Partials/footer')%>

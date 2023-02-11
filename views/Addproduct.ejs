@@ -1,0 +1,23 @@
+<%- include('Partials/header')%>
+
+
+
+<div id="main">
+    <form class=" p-5 Addproduct my-3 form-control w-50 container productform " action="/Addproduct" method="post" enctype="multipart/form-data">
+        <h1 class="my-2">Add product</h1>
+        <input name="productname" class="form-control my-2" type="text" placeholder="Product Name">
+        <input name="highlight" class="form-control my-2" type="text" placeholder="highlight">
+        <input name="bankoffers" class="form-control my-2" type="text" placeholder="Bank Offers">
+        <div class="div d-flex align-items-center justify-content-center">
+        <input name="mainprice" class=" w-50 me-3 form-control my-2" type="text" placeholder="Main Price">
+        <input name="offerprice" class=" w-50  form-control my-2" type="text" placeholder="Offer Price">
+    </div>
+    <input name="percent" class="form-control my-2" type="text" placeholder="Percent">
+    <input name="Image" class="form-control w-50 my-2" type="file">
+
+    <button class="btn btn-primary w-25">Add Product</button>
+        
+        
+    </form>
+</div>
+<%- include('Partials/footer')%>
